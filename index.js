@@ -173,7 +173,7 @@ BotManager.prototype.loadInventories = function(appid, contextid, tradableOnly) 
 		return this.inventoryApi.get({
 			appid,
 			contextid,
-			retries: 100,
+			retries: 10000,
 			retryDelay: 3000,
 			steamid: bot.steamid,
 			tradable: tradableOnly,
